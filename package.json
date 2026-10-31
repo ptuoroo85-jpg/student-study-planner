@@ -1,0 +1,7 @@
+{
+  "name": "study-space",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly student study planner built with HTML, CSS, and JavaScript.",
+  "scripts": {"start": "node server.cjs", "check": "node --check dist/app.js"}
+}
