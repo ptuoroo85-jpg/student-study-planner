@@ -19,6 +19,12 @@
     <header class="topbar"><span>Workspace <span class="breadcrumb">/</span> <strong>Overview</strong></span><div class="topbar-right"><span class="local-badge"><i></i> Saved on this device</span><time class="today" id="today"></time><div class="avatar">S</div></div></header>
     <main id="overview">
       <div class="intro"><div><div class="eyebrow">YOUR STUDIES, CONNECTED</div><h1>Welcome back, Student<span>.</span></h1><p>Here's what's happening with your study plan.</p></div><a class="add-shortcut" href="#new-task">＋ Add task</a></div>
+        <aside class="right-column top-entry">
+          <section id="new-task" class="add-card" aria-labelledby="add-heading"><div class="add-heading"><span>＋</span><div><h2 id="add-heading">Add a study task</h2><p>Plan your next step.</p></div></div>
+            <form id="task-form" novalidate><label for="task-title">Task title <span>*</span></label><input id="task-title" name="title" placeholder="e.g. Revise chapter 3" maxlength="160" required aria-describedby="title-error"><p id="title-error" class="field-error" hidden>Please enter a task title.</p><label for="task-subject">Subject or course <span class="optional">optional</span></label><input id="task-subject" name="subject" placeholder="e.g. Introduction to Computing" maxlength="80"><button class="primary-button" type="submit"><span>＋</span> Add task</button><p class="form-hint">Small enough to start. Clear enough to finish.</p></form>
+          </section>
+          <section class="tip-card"><span class="tip-icon" aria-hidden="true">✧</span><div class="eyebrow">A MOMENT OF FOCUS</div><h3>Start small.<br>Keep going.</h3><p>Break a big assignment into a few small tasks. Every checkmark is a step forward.</p><div class="tip-line"></div><span>You've got this.</span></section>
+        </aside>
       <section class="stats" aria-label="Study overview">
         <article class="stat-card"><div class="stat-top"><span>Total tasks</span><span class="stat-icon" aria-hidden="true">▤</span></div><strong id="total-count">0</strong><p>Everything on your study list</p></article>
         <article class="stat-card"><div class="stat-top"><span>To do</span><span class="stat-icon purple" aria-hidden="true">◷</span></div><strong id="pending-count">0</strong><p>Your next steps toward success</p></article>
@@ -27,12 +33,7 @@
       </section>
       <section class="progress-panel" aria-labelledby="progress-heading"><div class="panel-heading"><div><h2 id="progress-heading">Your progress overview</h2><p id="encouragement">A fresh page. Start with one small task.</p></div><span class="panel-badge">ALL STUDY TASKS</span></div><div class="progress-label-row"><span>Task completion</span><span id="progress-label">0% of your tasks complete</span></div><div class="progress-track"><div id="progress-bar"></div></div><div class="progress-legend"><span><i></i> Completed</span><span><i></i> To do</span></div></section>
       <div class="workspace-grid">
-        <aside class="right-column">
-          <section id="new-task" class="add-card" aria-labelledby="add-heading"><div class="add-heading"><span>＋</span><div><h2 id="add-heading">Add a study task</h2><p>Plan your next step.</p></div></div>
-            <form id="task-form" novalidate><label for="task-title">Task title <span>*</span></label><input id="task-title" name="title" placeholder="e.g. Revise chapter 3" maxlength="160" required aria-describedby="title-error"><p id="title-error" class="field-error" hidden>Please enter a task title.</p><label for="task-subject">Subject or course <span class="optional">optional</span></label><input id="task-subject" name="subject" placeholder="e.g. Introduction to Computing" maxlength="80"><button class="primary-button" type="submit"><span>＋</span> Add task</button><p class="form-hint">Small enough to start. Clear enough to finish.</p></form>
-          </section>
-          <section class="tip-card"><span class="tip-icon" aria-hidden="true">✧</span><div class="eyebrow">A MOMENT OF FOCUS</div><h3>Start small.<br>Keep going.</h3><p>Break a big assignment into a few small tasks. Every checkmark is a step forward.</p><div class="tip-line"></div><span>You've got this.</span></section>
-        </aside>
+
         <section id="tasks" class="tasks-panel" aria-labelledby="tasks-heading">
           <div class="section-heading"><div><h2 id="tasks-heading">Your study tasks <span id="list-count">0</span></h2><p>A clear plan for what comes next.</p></div></div>
           <div class="filters" role="group" aria-label="Filter tasks"><button type="button" class="selected" data-filter="all" aria-pressed="true">All tasks <span id="filter-all">0</span></button><button type="button" data-filter="pending" aria-pressed="false">To do <span id="filter-pending">0</span></button><button type="button" data-filter="completed" aria-pressed="false">Completed <span id="filter-completed">0</span></button></div>
