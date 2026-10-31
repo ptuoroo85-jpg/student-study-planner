@@ -54,7 +54,7 @@ The project brief also asks for a personal report, reflection, screenshot, live 
 
 Live application: https://splendid-cupcake-80bce6.netlify.app/
 
-The application is deployed on Netlify from the `dist` files using a manual ZIP upload. The site is currently private; an instructor needs access before assessment. The GitHub repository is also private.
+The application is deployed on Netlify from the `dist` files using a manual ZIP upload. The Netlify site is public and opens without signing in. The GitHub repository remains private; grant the instructor repository access before assessment.
 
 `netlify.toml` sets the publish directory to `dist` for a future Git-based Netlify deployment. Changes pushed to GitHub do not automatically deploy to this manually uploaded site. Upload the current contents of `dist` to Netlify after application changes. No build command is required.
 
