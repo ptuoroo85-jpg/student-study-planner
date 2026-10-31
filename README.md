@@ -50,4 +50,12 @@ Problem: Students need a simple place to remember study tasks across courses and
 
 The project brief also asks for a personal report, reflection, screenshot, live link, and GitHub source link. These are submission requirements, separate from this application. Review the code and write your own reflection so you can explain the implementation. AI assistance was used to generate and check this application; disclose that assistance in your report as required by the brief.
 
-Deployment uses the `dist` folder as static website content. It can also be hosted on GitHub Pages or Netlify. No secrets belong in this repository.
+## Live application and Netlify deployment
+
+Live application: https://splendid-cupcake-80bce6.netlify.app/
+
+The application is deployed on Netlify from the `dist` files using a manual ZIP upload. The site is currently private; an instructor needs access before assessment. The GitHub repository is also private.
+
+`netlify.toml` sets the publish directory to `dist` for a future Git-based Netlify deployment. Changes pushed to GitHub do not automatically deploy to this manually uploaded site. Upload the current contents of `dist` to Netlify after application changes. No build command is required.
+
+Browser tasks are local to each origin: tasks saved on the previous host do not automatically appear on the Netlify URL. No secrets belong in this repository.
